@@ -1,21 +1,148 @@
- :root{
+ @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
     --Almost-White: hsl(0, 0%, 98%);
     --Medium-Gray: hsl(0, 0%, 41%);
     --Almost-Black: hsl(0, 0%, 8%);
- }
-*{
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
-
-.attribution {
-    font-size: 0.6875rem; 
-    text-align: center; 
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    font-size: 18px;
+    
 }
- .attribution a { 
-    color: hsl(228, 45%, 44%); 
+button{
+    font-family: 'Epilogue';
+    background-color: var(--Almost-White);
+    border: none;
+    cursor: pointer;
+    color: var(--Medium-Gray);
+    font-size: 1em;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 16px 24px;
+    & .hamburguer-menu{
+        cursor: pointer;
+    }
+    & nav{
+        display: none;
+        border: 1px solid red;
+        color: var(--Medium-Gray);
+        & .back{
+            background-color: var(--Medium-Gray);
+            /*opacity: 0.75; */
+            position: absolute;
+            left: 0;/*que empiece desde la izquierda */
+            top: 0;/* que empiece desde arriba*/
+            width: 100%;
+            height: 780px;
+        }
+        & .front{
+            background-color: var(--Almost-White);
+            width: 240px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 780px;
+            padding: 20px;
+        }
+        & .close-img-container{
+            text-align: right;
+            cursor: pointer;
+        }
+        & li{
+            list-style: none;
+            cursor: pointer;
+            margin-bottom: 26px;
+        }
+        & .features-ul, .company-ul{
+            margin-left: 28px;
+            display: none;
+        }
+        & .submenu-btn{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 24px 0;
+            width: 110px;
+            height: 26px;
+        }
+    }
+    & .btns-container{
+        position:absolute;
+        bottom: 124px;
+    }
+    & .logint-btn{
+        display: block;
+        margin: 0 auto 16px;
+    }
+    & .register-btn{
+        border: 1px solid var(--Almost-Black);
+        width: 195px;
+        height: 42px;
+        border-radius: 14px;
+    }
+}
+main{
+    display: flex;
+    flex-direction: column-reverse;
+    & .hero-image{
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    & h2{
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+    & p{
+        text-align: center;
+        line-height: 26px;
+        color: var(--Medium-Gray);
+        margin: 0 16px 24px;
+        font-size: 0.89em;
+    }
+    & button{
+        background-color: var(--Almost-Black);
+        color: var(--Almost-White);
+        width: 136px;
+        height: 48px;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 52px;
+        &:hover{
+        background-color: var(--Almost-White);
+        color: var(--Almost-Black);
+        border: 1px solid var(--Almost-Black);
+        }
+    }
+    & .Logos-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        margin-bottom: 96px;
+    }
+    & .databiz{
+        width: 81px;
+    }
+    & .audio{
+        width: 52px;
+    }
+    & .audio{
+        width: 64px;
+    }
+    & .maker{
+        width: 59px;
+    }
 }
