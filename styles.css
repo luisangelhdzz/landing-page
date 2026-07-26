@@ -189,6 +189,15 @@ main{
             position: static;
             width: 182px;
         }
+        & .features-ul{
+            background-color: var(--Almost-White);
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.15);
+            border-radius: 10px;
+            width: 153px;
+            height: 160px;
+            position: absolute;
+            top: 40px;
+        }
         & .Login-btn{
             margin: 0;
         }
