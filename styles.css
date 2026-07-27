@@ -1,5 +1,4 @@
  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 :root {
     --Almost-White: hsl(0, 0%, 98%);
     --Medium-Gray: hsl(0, 0%, 41%);
@@ -145,7 +144,6 @@ main{
         width: 59px;
     }
 }
-
 @media (min-width:768px){
     header{
         & .hamburguer-menu{
@@ -166,7 +164,6 @@ main{
             display: flex;
             padding: 0;
             justify-content: space-between;
-
         }
         & .close-img-container{
             display: none;
@@ -189,14 +186,32 @@ main{
             position: static;
             width: 182px;
         }
-        & .features-ul{
+        & .features-ul ,.company-ul{
             background-color: var(--Almost-White);
             box-shadow: 0px 10px 10px rgba(0,0,0,0.15);
             border-radius: 10px;
             width: 153px;
             height: 160px;
             position: absolute;
-            top: 40px;
+            padding: 18px 24px;
+            font-size: 0.875em;
+            display: none;
+            top: 35px;
+            & li{
+                margin-bottom: 16px;
+            }
+        }
+        &  .features-ul-container, .company-ul-container{
+            position: relative;
+        }
+        & .features-ul{
+            left: -80px;
+        }
+        & #company-btn,#features-btn{
+            width: 100px;
+        }
+        & .company-ul{
+            left: -30px;
         }
         & .Login-btn{
             margin: 0;
